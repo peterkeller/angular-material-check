@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sanity-check": {
+    "material-check": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sanity-check",
+            "outputPath": "dist/material-check",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -50,18 +50,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sanity-check:build"
+            "browserTarget": "material-check:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "sanity-check:build:production"
+              "browserTarget": "material-check:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sanity-check:build"
+            "browserTarget": "material-check:build"
           }
         },
         "test": {
@@ -95,7 +95,7 @@
         }
       }
     },
-    "sanity-check-e2e": {
+    "material-check-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,7 +103,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "sanity-check:serve"
+            "devServerTarget": "material-check:serve"
           }
         },
         "lint": {
@@ -118,5 +118,5 @@
       }
     }
   },
-  "defaultProject": "sanity-check"
+  "defaultProject": "material-check"
 }

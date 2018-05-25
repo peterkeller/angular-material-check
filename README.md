@@ -1,4 +1,4 @@
-# SanityCheck
+# Material Check
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
 
@@ -55,7 +55,7 @@ imports: [
 ]
 ```
 
-Finally, add a link to the icons in `index.html` as they are not delivered in the libraries:
+Finally, add a link to the icons in `index.html` as they are not delivered in the librariesx§x:
 
 ```
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
